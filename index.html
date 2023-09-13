@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html data-bs-theme="light" lang="en">
 
@@ -5,14 +7,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Home - Brand</title>
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'assets/bootstrap/css/bootstrap.min.css' %}">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic&amp;display=swap">
-    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/css/aos.min.css">
-    <link rel="stylesheet" href="assets/css/baguetteBox.min.css">
-    <link rel="stylesheet" href="assets/css/Pricing-Centered-badges.css">
-    <link rel="stylesheet" href="assets/css/Pricing-Centered-icons.css">
+    <link rel="stylesheet" href="{% static 'assets/fonts/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/aos.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/baguetteBox.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/Pricing-Centered-badges.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/Pricing-Centered-icons.css' %}">
 </head>
 
 <body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="57">
@@ -34,7 +36,7 @@
             </div>
         </div>
     </nav>
-    <header class="text-center text-white d-flex masthead" style="background-image:url('assets/img/header.jpg');">
+    <header class="text-center text-white d-flex masthead" style="background-image: url({% static 'assets/img/header.jpg' %});">
         <div class="container my-auto">
             <div class="row">
                 <div class="col-lg-10 col-xxl-8 mx-auto">
@@ -96,7 +98,7 @@
         <div class="container-fluid p-0">
             <div class="row g-0 popup-gallery">
                 <div class="col-sm-6 col-lg-4"><a class="portfolio-box" href="fullsize/4.jpg"></a></div>
-                <div class="col-sm-6 col-lg-4 col-xxl-4"><a class="portfolio-box" href="fullsize/6.jpg"><img class="img-fluid" src="assets/img/thumbnails/6.jpg">
+                <div class="col-sm-6 col-lg-4 col-xxl-4"><a class="portfolio-box" href="fullsize/6.jpg"><img class="img-fluid" src="{% static 'assets/img/thumbnails/6.jpg' %}">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded"><span>PROJECT</span></div>
@@ -131,11 +133,11 @@
             </div>
         </div>
     </section>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/aos.min.js"></script>
-    <script src="assets/js/bs-init.js"></script>
-    <script src="assets/js/baguetteBox.min.js"></script>
-    <script src="assets/js/creative.js"></script>
+    <script src="{% static 'assets/bootstrap/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'assets/js/aos.min.js' %}"></script>
+    <script src="{% static 'assets/js/bs-init.js' %}"></script>
+    <script src="{% static 'assets/js/baguetteBox.min.js' %}"></script>
+    <script src="{% static 'assets/js/creative.js' %}"></script>
 </body>
 
 </html>
