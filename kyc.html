@@ -25,10 +25,12 @@
                             <h2 class="text-center mb-4">Please let's know <br>a little more<br>about you😃</h2>
                             <form method="post" action="{% url 'submit_kyc' %}">
                                     {% csrf_token %}
-                                <div class="mb-3"><input class="form-control" type="text" id="name-2" name="first_name" placeholder="First Name"><input class="form-control" type="text" id="name-1" name="last_name" placeholder="Last Name"></div>
-                                <div class="mb-3"><input class="form-control" type="email" id="email-2" name="email" placeholder="Email Address"></div>
-                                <div class="mb-3"><textarea class="form-control" id="message-2" name="aim" rows="6" placeholder="Tell us what you aim to achieve at the end of your course with techpro"></textarea></div>
-                                <div><button class="btn btn-primary d-block w-100" type="submit">Send </button></div>
+                                    <form method="post">
+                                        <div class="mb-3"><input class="form-control" type="text" id="name-2" name="first_name" placeholder="First Name"><input class="form-control" type="text" id="name-1" name="last_name" placeholder="Last Name"><input class="form-control" type="text" id="name-3" name="course" value="{{ course }}" placeholder="Course"></div>
+                                        <div class="mb-3"><input class="form-control" type="email" id="email-2" name="email" placeholder="Email Address"></div>
+                                        <div class="mb-3"><textarea class="form-control" id="message-2" name="aim" rows="6" placeholder="Tell us what you aim to achieve at the end of your course with techpro"></textarea></div>
+                                        <div><button class="btn btn-primary d-block w-100" type="submit">Send </button></div>
+                                    </form>
                             </form>
                         </div>
                     </div>
