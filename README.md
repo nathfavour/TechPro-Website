@@ -11,4 +11,4 @@ Full Payment
 
 Classes Begin
 
-September 23rd, 2023
+September 30th, 2023
